@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: montserrat; */
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #5f27cd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    margin-right: 50px;
+    display: flex;
+    
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0 8px;
+    padding: 10px 10px;
+    transition: .5s;
+    border-radius: 5px;
+   }
+   nav ul li:hover{
+    background-color:#4a1aacd7 ;
+   }
+nav ul li a{
+    text-decoration: none;
+    color:#fff ;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .5s;
+}
+nav ul li a:hover{
+    /* color: #c9573e; */
+}
+.logo{
+    
+    font-weight: bold;
+    margin-left: 60px;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #fff;
+}
+span{
+    color: red;
+}
+#bar{
+    color: #fff;
+    font-size: 30px;
+    padding-right: 20px;
+     cursor: pointer;
+  
+    
+}
+#bar i{
+    display: none;
+}
+#click{
+
+    display: none
+}
+#click:checked ~ #bar i::before{
+    content: '\f00d';
+}
+@media only screen and (max-width:992px) {
+    #click:checked ~ ul{
+        left: 0;
+    }
+    #bar i{
+        display: block;
+    }
+    nav ul{
+       position: fixed;
+       top: 60px;
+       width: 250px;
+       /* height: 54.5vh; */
+       background-color: #2C3A47;
+       flex-direction: column;
+       left:-250px;
+       text-align: center;
+       transition: .5s;
+      
+     }
+    nav ul li{
+        margin: 0px 0px;
+      padding: 13px 0px;
+      border-bottom: 1px solid #fff;
+      border-radius: 0;
+        
+     }
+     nav ul li:hover{
+        background-color: #222f3e;
+        
+     }
+     nav ul li:first-child{
+        border-top: 1px solid #fff;
+     }
+     nav ul li a{
+        display: block;
+      }
+      nav ul li a:hover{
+        color: #fff;
+      }
+      
+   }
+/* nav code end here */
+
+
+.single-img{
+width: 100%;
+height: 500px;
+position: relative;
+}
+.single-img img{
+    width: 100%;
+    height: 100%;
+}
+.fa-angle-left{
+    color:red;
+    font-size: 35px;
+    position: absolute;
+    top: 250px;
+    left: 20px;
+  
+}
+
+.fa-angle-right{
+    color:red;
+    font-size: 35px;
+    position: absolute;
+    top: 250px;
+    right: 20px;
+}
+.center-title{
+    text-transform: capitalize;
+    margin-left: 400px;
+    margin-right: 400px;
+    position: absolute;
+    top: 200px;
+    text-align: center;
+}
+.center-title h1{
+    text-align: center;
+    color: #0652DD;
+    font-size: 45px;
+    
+}
+.center-title  h2{
+    text-align: center;
+    color: #0652DD;
+    font-weight: 900;
+    font-size: 30px;
+}
+.center-title p{
+    text-align: justify;
+    margin: 10px 0;
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.center-title a{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #12CBC4;
+    color: #fff;
+    padding: 0px 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 22px;
+    transition: .5s;
+    
+    
+}
+.center-title a:hover{
+    background-color: #12aaa5;
+}
+/* main content code start here */
+#first-section{
+    padding: 50px 0;
+}
+.parent-div{
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+   
+}
+.parent-div h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.parent-div p{
+    line-height: 20px;
+    text-align: justify;
+}
+/* second section code start here */
+#second-section{
+    padding-bottom: 50px;
+}
+.second-parent{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-items: center;
+    gap: 40px;
+}
+.single-card-img {
+    height: 500px;
+    width: 800px;
+}
+.single-card-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+.item-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.single-card{
+    text-align: center;
+    background-color: #dfe6e9;
+    padding: 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.single-card  h3{
+    margin: 15px 0;
+}
+.single-card p{
+    text-align: justify;
+}
+.single-card i{
+    background-color: #12CBC4;
+    border: 1px solid #fff;
+    padding: 8px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.63);
+}
+/* third section code start here */
+#third-section{
+    background-color: #f7d8945e;
+    padding: 100px 0;
+}
+.div-parent{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.bingo-parent{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.bingo-parent ul li{
+    font-size: 20px;
+    line-height: 35px;
+}
+.bingo-parent a{
+    text-decoration: none;
+    background-color: #12CBC4;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: .1em;
+}
+.bingo-parent a:hover{
+   background-color: #12cbc5d3;
+}
+.img-div img{
+    width: 100%;
+}
+.we-are-bingo{
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+.we-are-bingo h2{
+    margin-bottom: 25px;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.we-are-bingo p{
+    text-align: justify;
+    font-size: 20px;
+}
+/* fourth-section code start */
+#fourth-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.774)),url('img/ipadman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+    padding-top: 80px;
+    
+}
+.create-parent{
+    margin-left: 400px;
+    margin-right: 400px;
+    color: #fff;
+    text-align: center;
+}
+.create-parent h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 35px;
+    
+}
+.create-parent p{
+    text-align: justify;
+    font-size: 20px;
+}
+.create-parent a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #12CBC4;
+  margin-top: 20px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+/* fifth-section-code start here */
+#fifth-section{
+    padding: 50px 0;
+    background-color: #d2dae2;
+}
+.project-div{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.project-title{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.project-title h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.project-title  p{
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.project-parent{
+    display: flex;
+    justify-content: space-around;
+}
+.project-child{
+    text-align: center;
+}
+.project-child i{
+    background-color: #12aaa5;
+    padding: 10px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.753);
+}
+.project-child p{
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.project-child h5{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+/* sixth section code start here */
+#sixth-section{
+    
+}
+.man-background{
+    height: 300px;
+    background-color: #0fbcf9;
+    padding: 50px 0;
+    
+   
+}
+.man-child{
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+}
+.man-child i{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.man-child p{
+    font-size: 20px;
+}
+.man-div{
+    height: 200px;
+    background-color: #fad390f5;
+}
+.man-div img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    
+}
+.man-div{
+    text-align: center;
+    /* padding-top: 40px; */
+    text-transform: uppercase;
+}
+/* seventh section code start here */
+#seventh-section{
+    background-color: #f7f1e3;
+    padding: 50px 0;
+}
+.latest-grand{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.latest-title{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.latest-title h1{
+    text-transform: capitalize;
+    font-size: 35px;
+    letter-spacing: .1em;
+}
+.border{
+    border: 2px solid #18dcff;
+    border-radius: 5px;
+    margin-left: 215px;
+    margin-right: 215px;
+   margin-top: 10px;
+}
+.latest-title p{
+    margin-top: 15px;
+    margin-bottom: 45px;
+    font-size: 20px;
+}
+.letest-parent{
+    display: flex;
+    gap: 30px;
+}
+.letest-single-card{
+    background-color: #fff;
+    padding-bottom: 40px;
+   
+}
+.letest-single-card h3{
+    padding: 10px 0;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.letest-single-card  p{
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.letest-single-card a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #18dcff;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.letest-img{
+    height: 200px;
+} 
+.letest-img img{
+    width: 100%;
+    height: 100%;
+}
+/* eight section code start here */
+#eight-section{
+    background-color: #1e272e;
+    padding: 50px 0;
+}
+.footer-parent{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+   
+}
+.about-single-card{
+    text-align: center;
+}
+.about-single-card h2{
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about p{
+    color: #d2dae2d2;
+    text-align: justify;
+    font-size: 20px;
+}
+.service p{
+    font-size: 20px;
+    color: #d2dae2b9;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.links a{
+    display: block;
+    text-decoration: none;
+    color:#d2dae2b9 ;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.connect a{
+    display: block;
+    text-decoration: none;
+    color:#d2dae2b9 ;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+footer{
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.911);
+    padding: 20px 0;
+    text-align: center;
+}
+.copy p{
+      color: #fff;
+      font-size: 25px;
+}
+@media only screen and (max-width:688px) {
+    .center-title{
+        margin-left: 80px;
+        margin-right: 80px;
+        top: 100px;
+    }
+    /* first-section code start */
+    .parent-div{
+        margin-left: 50px;
+        margin-right: 50px;
+        
+       
+    }
+    /* second section code start here */
+    .second-parent{
+        display: block;
+       margin-right: 30px;
+       margin-left: 30px ;
+
+    }
+    
+    .single-card-img{
+        width: 90%;
+    }
+    .item-parent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 30px;
+
+    }
+    /* third section code start */
+    .div-parent{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .bingo-parent{
+        display: block;
+        
+    }
+    .we-are-bingo{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .img-div{
+        margin-bottom: 20px;
+    }
+    /* fourth section code start here */
+    #fourth-section{
+        padding-top: 20px;
+    }
+    .create-parent{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    /* fifth section code start here */
+    .project-div{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .project-title{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .project-parent{
+        display: block;
+    }
+    .project-child{
+        margin-bottom: 20px;
+    }
+    /* sixth section code start here */
+    .man-child{
+        margin-left: 30px;
+        margin-right: 30px;
+        
+      }
+      .man-div img{
+        margin-left: 10px;
+      }
+      .man-background{
+           padding:  0;
+      }
+      /* seventh section code start here */
+      .latest-grand{
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .latest-title{
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .border{
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+      .letest-parent{
+        display: block;
+      }
+      .letest-single-card{
+        margin-bottom: 40px;
+      }
+      /* eight section code start here */
+     
+      .footer-parent{
+        margin-left: 30px;
+        margin-right: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    .about-single-card{
+       margin-bottom: 20px;
+    }
+    .about-single-card {
+        letter-spacing: .1em;
+    }
+}
+@media only screen and (min-width:689px) and (max-width:999px) {
+    .center-title{
+        margin-left: 140px;
+        margin-right: 140px;
+        top: 100px;
+    }
+    /* first-section code start */
+    .parent-div{
+        margin-left: 140px;
+        margin-right: 140px;
+        
+       
+    }
+    /* second section code start here */
+    .second-parent{
+        display: block;
+       margin-right: 70px;
+       margin-left: 70px ;
+
+    }
+    .single-card-img{
+        width: 90%;
+    }
+    .item-parent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 30px;
+        
+    }
+    /* third section code start */
+    .div-parent{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .we-are-bingo{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .bingo-parent{
+        display: block;
+        
+    }
+    .img-div{
+        margin-bottom: 20px;
+    }
+    /* fourth section code start here */
+    .create-parent{
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+     /* fifth section code start here */
+     .project-div{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .project-title{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    /* sixth section code start here */
+    .man-child{
+        margin-left: 70px;
+        margin-right: 70px;
+      }
+      .man-div img{
+        margin-left: 10px;
+      }
+      /* seventh section code start here */
+      .latest-grand{
+        margin-left: 70px;
+        margin-right: 70px;
+      }
+      .latest-title{
+        margin-left: 70px;
+        margin-right: 70px;
+      }
+      .border{
+        margin-left: 180px;
+        margin-right: 180px;
+      }
+      .letest-parent{
+        display: block;
+      }
+      .letest-single-card{
+        margin-bottom: 40px;
+      }
+      /* eight section code start here */
+      .footer-parent{
+        margin-left: 70px;
+        margin-right: 70px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    .about-single-card{
+       margin-bottom: 20px;
+    }
+    .about-single-card {
+        letter-spacing: .1em;
+    }
+}
